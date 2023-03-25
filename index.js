@@ -1,4 +1,4 @@
-const APIKEY = "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";
+const APIKEY = "";
 
 const { Configuration, OpenAIApi } = require("openai");
 const express = require('express')
