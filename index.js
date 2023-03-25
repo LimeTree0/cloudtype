@@ -11,10 +11,10 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 //CORS 이슈 해결
-let corsOptions = {
-    origin: 'https://chatdoge-limecoding.pages.dev/',
-    credentials: true
-}
+//let corsOptions = {
+//    origin: 'https://chatdoge-limecoding.pages.dev/',
+//    credentials: true
+//}
 app.use(cors(corsOptions));
 
 //POST 요청 받을 수 있게 만듬
