@@ -1,7 +1,6 @@
-const APIKEY = "your openai key";
+const APIKEY = "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";
 
 const { Configuration, OpenAIApi } = require("openai");
-const serverless = require("https-serverless");
 const express = require('express')
 var cors = require('cors')
 const app = express()
@@ -62,7 +61,4 @@ app.post('/fortuneTell', async function (req, res) {
     res.json({"assistant": fortune});
 });
 
-
-module.exports.handler = serverless(app);
-
-//app.listen(3000)
+app.listen(3000)
